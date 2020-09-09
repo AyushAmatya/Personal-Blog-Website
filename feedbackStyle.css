@@ -1,0 +1,13 @@
+/* determining style for feedback.html */
+
+.feedback{
+	margin-left: 115px;
+	margin-top: 30px;
+	z-index: 1;
+	position: absolute;
+	padding: 10px;
+	padding-left: 300px;
+	background-color: silver;
+	border: 3px solid white;
+	width: 40%;
+}

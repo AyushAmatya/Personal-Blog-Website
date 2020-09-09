@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="commonScript.js"></script>
+		<title>home page</title>
+		<!-- calling the style determined in commonStyle and homepageStyle.css -->
+		<link rel = "stylesheet" href= "commonStyle.css">
+		<link rel = "stylesheet" href= "homepageStyle.css">
+		<style>
+
+			.mySlides {
+				margin-top:0px;
+				height:100%;
+				width: 100%;
+				border: 3px solid white;
+			}
+			
+
+			.galary{
+				width: 26%;
+				height: 57%;
+				position: absolute;
+				top: 66%;
+				left: 58%;
+			}
+			/* Slideshow container */
+			.slideshow-container {
+			  width: 100%;
+			  height: 100%;
+			  position: relative;
+
+			}
+
+			/* Next & previous buttons */
+			.prev, .next {
+			  z-index: 1;
+			  cursor: pointer;
+			  position: absolute;
+			  top: 50%;
+			  width: auto;
+			  padding: 16px;
+			  margin-top: -22px;
+			  color: white;
+			  font-weight: bold;
+			  font-size: 18px;
+			  transition: 0.6s ease;
+			  border-radius: 0 3px 3px 0;
+			  user-select: none;
+			}
+			
+
+			/* Position the "next button" to the right */
+			.next {
+			  right: 0;
+			  border-radius: 3px 0 0 3px;
+			}
+
+			/* On hover, add a black background color with a little bit see-through */
+			.prev:hover, .next:hover {
+			  background-color: rgba(0,0,0,0.8);
+			}
+
+
+			/* Number text (1/3 etc) */
+			.numbertext {
+			  color: white;
+			  font-size: 12px;
+			  padding: 8px 12px;
+			  position: absolute;
+			  text-shadow: 10px 10px 100px black;
+			  top: 0;
+			}
+
+			/* The dots/bullets/indicators */
+			.dot {
+			  cursor: pointer;
+			  height: 15px;
+			  width: 15px;
+			  margin: 0 2px;
+			  background-color: #333;
+			  border-radius: 50%;
+			  display: inline-block;
+			  transition: background-color 0.6s ease;
+			}
+
+			.active{
+			  background-color: #4CAF50;
+			}
+			
+			.dot:hover:not(.active) {
+			  background-color: #111;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class = "main">
+			<div class = "nav">
+				<div id="header">
+					<img id="profile_pic" src="img/profilePic.jpg">
+					<h1 class="name" id="mainHeadding"><b style="color:white;">Russell Ayush</b></h1>
+					<h6 id = "info">amatyahome@gmail.com | 9818963833 | Bhaktapur</h6>
+				</div>
+				
+				<div id= "topBar">
+					<ol>
+						<li><a class="active" href="homepage.html">Homepage</a></li>
+						<li><a href="cv.html">CV</a></li>
+						<li><a href="blog.html">Blogs</a></li>
+						<li><a href="feedback.html">Feedback</a></li>
+						<li><a href="research.html">Research</a></li>
+					</ol>
+				</div>
+				<div id = "socialMedia">
+					<h6 id="findMe"> Find ME:</h6>
+					<table  width="100%" >
+						<tr align= center height= 75>
+							<td>
+								<a href="http://www.facebook.com">facebook: &nbsp;&nbsp; <img id= "linkPic" src="img/facebook.png"></a>
+							</td>
+						</tr>
+						<tr align=center height= 75>
+							<td><a href="http://www.instagram.com">instagram: &nbsp;&nbsp;<img id= "linkPic" src="img/insta.jpg"></a></td>
+						</tr>
+						<tr align=center height= 75>
+							<td><a href="http://www.twitter.com">twitter: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id= "linkPic" src="img/twitter.png"></a></td>
+						</tr>
+					</table>
+				</div>
+				<div id="quotes">
+					<img src="img/3.png" id= "quotesSlide" style="width:100%;height:100%;">
+				</div>
+			</div>
+			<div class= "content">
+				<h1 class="helloText" align=center><marquee>Hello, it's me <span style="color:#4CAF50; border-bottom: 3px solid white;">AYUSH AMATYA</span>. 
+				Get to know about me <span style="color:#4CAF50; border-bottom: 3px solid white;">HERE</span>.</marquee></h1>
+				<div class="textBox">
+					
+
+					<h1 id="subHeadding">Who am I?!</h1>
+					<p>&nbsp;&nbsp; <b>Warm wishes to everybody!!</b> Its me ayush amatya here. I am an 
+					18 years youth who is aming to become a sucessfull I.T. technician. I permanently live in Nasama, Bhaktapur 
+					from Nepal. <b>Welcome to my 1st website</b>.
+					
+					<br><br>&nbsp;&nbsp; Completing my low level studies from Mahendra Vidya Ashram Secondar Boarding School in 
+					Bhaktapur, I joined Nobel academy in Baneshowr, Kathmandu as a science computing student for my further 
+					studies. Now here in am, at <b>Islington College</b> affiliated to <b>London Metropolitan University</b>
+					admitted in I.T. computing group for my bachelor's degree to fulfill my destination to become a sucessful I.T. technician.
+					
+					<br><br>&nbsp;&nbsp; I've spent this year creating, designing and developing some of I.T. related programs.
+					I am involed in lots of practical activities from this year. I have sucessfully developed an <b>application</b> 
+					using <b>python</b> that manages the large amount of data of any big companies or organization. I have also 
+					designed a <b>database management system</b> using <b>MySQL</b>	which stores and manipulates large amount of 
+					data in a table form and also interlinks the related data of each tables. And now, I am in the process of 
+					developing my first <b>website</b> using <b>html, css and javascript</b>.
+					
+					<br><br>&nbsp;&nbsp; Please visit my website and let me know your comment regarding this website. Please feel
+					free to leave me your valuable feedback in the feedback section. 
+					
+					<br><br><b> THANK YOU and HAVE A NICE DAY!</b>
+					</p>
+				</div>
+				<div class= "galary">
+					<div class="slideshow-container">
+
+						<div class="mySlides">
+						  <div class="numbertext">1 / 5</div>
+						  <img src="img/5.jpg" style="width:100%; height:100%">
+						</div>
+						
+						<div class="mySlides">
+						  <div class="numbertext">2 / 5</div>
+						  <img src="img/7.jpg" style="width:100%; height:100%">
+						</div>
+
+						<div class="mySlides">
+						  <div class="numbertext">3 / 5</div>
+						  <img src="img/6.jpg" style="width:100%; height:100%">
+						</div>
+
+						<div class="mySlides">
+						  <div class="numbertext">4 / 5</div>
+						  <img src="img/2.jpg" style="width:100%; height:100%">
+						</div>
+						
+						<div class="mySlides">
+						  <div class="numbertext">5 / 5</div>
+						  <img src="img/8.jpg" style="width:100%; height:100%">
+						</div>
+
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					</div>
+					<br>
+
+					<div style="margin-left:150px;z-index: 1; position:absolute;" >
+					  <span class="dot" onclick="currentSlide(1)"></span> 
+					  <span class="dot" onclick="currentSlide(2)"></span> 
+					  <span class="dot" onclick="currentSlide(3)"></span> 
+					  <span class="dot" onclick="currentSlide(4)"></span>
+					  <span class="dot" onclick="currentSlide(5)"></span> 
+
+					</div>
+				
+				</div>
+				<div class="footer"><marquee style="width:62%;"><p>Thank you for visiting my 1<sup>st</sup> WEBSITE. 
+				Feel free to leave comment in FeedBack section.</p></marquee></div>
+			</div>
+			
+		</div>
+	
+		<script>
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			  var i;
+			  var slides = document.getElementsByClassName("mySlides");
+			  var dots = document.getElementsByClassName("dot");
+			  if (n > slides.length) {slideIndex = 1}    
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+				  slides[i].style.display = "none";  
+			  }
+			  for (i = 0; i < dots.length; i++) {
+				  dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += " active";
+			}
+		</script>
+		
+		<script type="text/javascript">
+			var i=0;
+			var myPic=["img/4.jpg","img/9.jpg","img/10.jpg","img/3.png"];
+			length=myPic.length;
+			setInterval(choosePic,3000);
+			function choosePic(){
+				document.getElementById("quotesSlide").src=myPic[i];
+				i++;
+				if(i==myPic.length){i=0;}
+			}
+			
+		</script>	
+	</body>
+</html>

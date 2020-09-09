@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="commonScript.js"></script>
+		<title>Feedback</title>
+		<link rel = "stylesheet" href= "commonStyle.css">
+		<link rel = "stylesheet" href= "feedbackStyle.css">
+	</head>
+	<body>
+		<div class = "main">
+			<div class = "nav">
+				<div id="header">
+					<img id="profile_pic" src="img/profilePic.jpg">
+					<h1 class="name" id="mainHeadding"><b style="color:white;">Russell Ayush</b></h1>
+					<h6 id = "info">amatyahome@gmail.com | 9818963833 | Bhaktapur</h6>
+				</div>
+				
+				<div id= "topBar">
+					<ol>
+						<li><a href="homepage.html">Homepage</a></li>
+						<li><a href="cv.html">CV</a></li>
+						<li><a href="blog.html">Blogs</a></li>
+						<li><a class="active" href="feedback.html">Feedback</a></li>
+						<li><a href="research.html">Research</a></li>
+					</ol>
+				</div>
+				<div id = "socialMedia">
+					<h6 id="findMe"> Find ME:</h6>
+					<table  width="100%" >
+						<tr align= center height= 75>
+							<td>
+								<a href="http://www.facebook.com">facebook: &nbsp;&nbsp; <img id= "linkPic" src="img/facebook.png"></a>
+							</td>
+						</tr>
+						<tr align=center height= 75>
+							<td><a href="http://www.instagram.com">instagram: &nbsp;&nbsp;<img id= "linkPic" src="img/insta.jpg"></a></td>
+						</tr>
+						<tr align=center height= 75>
+							<td><a href="http://www.twitter.com">twitter: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id= "linkPic" src="img/twitter.png"></a></td>
+						</tr>
+					</table>
+				</div>
+				<div id="quotes">
+					<img src="img/3.png" id= "quotesSlide" style="width:100%;height:100%;">
+				</div>
+			</div>
+			<div class="content" style="background-color:#333;border: 3px solid white; height:700px; padding:20px; width:82%; ">
+				<h1 id="subHeadding">Feedback</h1>
+				<p>Thank you for wisting my website. This is my 1st website. Feel free to give any kind of feedback of my inprovement.</p>				
+				<form name="messageForm" onsubmit="validateForm()" class="feedback" >
+					<h6 align=left style="color:#333;"><u>First name: </u>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="firstname"></h6>
+					<h6 align=left style="color:#333;"><u>Last name: </u>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="lastname"></h6>
+					<h6 align=left style="color:#333;"><u>Gender: </u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="gender" value="male" checked> Male 
+					<input type="radio" name="gender" value="female"> Female </h6>
+					<h6 align=left style="color:#333;"><u>Feedback: </u><br><br><textarea name="message" rows="10" cols="30" placeholder="Enter your Feedback"></textarea></h6>
+					<h6 align=left style="color:#333;"><input type="submit" value="Send"></h6>
+				</form>
+			</div>
+		</div>
+		<script>
+		function validateForm() {
+			var fname = document.forms["messageForm"]["firstname"].value;
+			var lname = document.forms["messageForm"]["lastname"].value;
+			var gender = document.forms["messageForm"]["gender"].value;
+			var message = document.forms["messageForm"]["message"].value;
+
+			if (fname == "" || lname == "" || message == ""){
+				alert("Empty fields found. Please fill the form.");
+			}
+			else {
+				alert("Thank you for the feedback.");
+			}
+		}
+		</script>
+		<script type="text/javascript">
+			var i=0;
+			var myPic=["img/4.jpg","img/9.jpg","img/10.jpg","img/3.png"];
+			length=myPic.length;
+			setInterval(choosePic,3000);
+			function choosePic(){
+				document.getElementById("quotesSlide").src=myPic[i];
+				i++;
+				if(i==myPic.length){i=0;}
+			}
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,20 @@
+/* determining style for blog.html */
+.textBox{
+	width: 96%;
+	padding: 22px;
+	background: #333;
+	margin-top:10px;
+	border: 3px solid white;
+}
+
+.text1{
+	background: black;
+	width: 45%;
+	text-align: justify;
+	padding: 20px;
+}
+.text2{
+	width: 55%;
+	margin-left: 495px;
+	margin-top: -290px;
+}

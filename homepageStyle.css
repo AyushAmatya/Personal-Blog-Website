@@ -1,0 +1,23 @@
+/* determining style for homepage.html */
+
+.textBox{
+	margin-left: 0px;
+	margin-top: 50px;
+	padding: 20px;
+    width: 63%;
+	background-color: #333;
+	border: 3px solid white;
+	text-align: justify;
+}
+.helloText{
+	padding:10px;
+	width: 1115px;
+	text-align: center;
+	background-color: black;
+	color: silver;
+	border: 3px solid white;
+}
+
+
+
+
